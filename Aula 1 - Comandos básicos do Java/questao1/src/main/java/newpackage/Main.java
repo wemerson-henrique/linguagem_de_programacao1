@@ -52,7 +52,7 @@ public class Main {
         System.out.println("A média das idades são: "+media);*/
         
         //5. Faça um programa em java que leia dois números  e mostre o maior.
-        System.out.println("Escreva dois numeros:");
+        /*System.out.println("Escreva dois numeros:");
         Scanner ler=new Scanner(System.in);
         double num1=ler.nextDouble();
         double num2=ler.nextDouble();
@@ -60,6 +60,16 @@ public class Main {
             System.out.println("O numero maior é: "+num1);
         }else{
             System.out.println("O numero maior é: "+num2);
+        }*/
+        
+        //7. Faça um programa em java que descubra se um número é par ou impar
+        System.out.println("Escreva um número:");
+        Scanner ler= new Scanner(System.in);
+        int num=ler.nextInt();
+        if(0==num%2){
+            System.out.println("O numero "+num+" é par");
+        }else{
+            System.out.println("O numero "+num+" não é par");
         }
     }
     

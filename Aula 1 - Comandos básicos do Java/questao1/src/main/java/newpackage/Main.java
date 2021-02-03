@@ -185,6 +185,24 @@ public class Main {
             }
         }*/
         
+        //13. Faça um programa que peça ao usuário para digitar 15 valores e  mostre a soma.
+        /*int num[]= new int[15];
+        int soma=0;
+        Scanner ler=new Scanner(System.in);
+        for(int i=0;i<15;i++){
+            System.err.println("Escreva um número");
+            num[i]=ler.nextInt();
+            soma=soma+num[i];
+        }
+        System.out.println("A soma total dos números é: "+soma);*/
+        
+        //14. Informar todos os números de 1000 a 1999 que quando divididos por 11 obtemos resto = 5.
+        System.out.println("OS números de 1000 a 1999 que quando divididos por 11 obtemos resto 5 são:");
+        for(int i=1000;i<=1999;i++){
+            if(5==i%11){
+                System.out.println(i);
+            }
+        }
         
     }
     

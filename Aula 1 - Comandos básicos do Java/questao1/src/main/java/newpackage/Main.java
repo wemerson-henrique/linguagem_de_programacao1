@@ -5,6 +5,9 @@
  */
 package newpackage;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 /**
@@ -86,8 +89,103 @@ public class Main {
             System.out.println("O numero "+num+" não é par");
         }*/
         
-        //8. Maior de dois números
-        System.out.println("8. Maior de dois números");
+        /*8. Escreva um programa para ler o ano de nascimento de uma pessoa e
+        escrever uma mensagem que diga se ela poderá ou não votar este ano 
+        (não é necessário considerar o mês em que ela nasceu).*/
+        /*Calendar cal = GregorianCalendar.getInstance();
+        int ano_atual = cal.get(Calendar.YEAR);
+        
+        System.out.println("Escreva o ano se seu nascimento ");
+        Scanner ler=new Scanner(System.in);
+        int ano= ler.nextInt();
+        int idade=ano_atual-ano;
+        if(16<=idade){
+            System.out.println("Você tem "+idade+" de idade então pode votar");
+        }else{
+            System.out.println("Você tem "+idade+" de idade então não pode votar");
+        }*/
+        
+        /*9. Faça uma calculadora básica que tenha as funções de Soma, 
+        Subtração, Divisão e Multiplicação. Peça ao usuário 2 números e qual operação deseja realizar.*/
+        /*boolean acao = true;
+        int opcao = 0;
+        double num1,num2,resp;
+        Scanner ler=new Scanner(System.in);
+        do{
+            System.out.println("---------------------------------------------------\n");
+            System.out.print("Precione"+"           Operação"+"\n");
+            System.out.println("    1     para     Sair\n"
+                    + "    2     para     Soma\n"
+                    + "    3     para     Subtração\n"
+                    + "    4     para     Divisão\n"
+                    + "    5     para     Multiplicação\n");
+            opcao=ler.nextInt();
+            if(opcao==1){
+                acao = false;
+            }
+            if(opcao==2){
+                System.out.println("Digite dois numeros\n");
+                num1=ler.nextDouble();
+                num2=ler.nextDouble();
+                resp=num1+num2;
+                System.out.println("O resoltado da operação é: "+resp);
+            }
+            if(opcao==3){
+                System.out.println("Digite dois numeros\n");
+                num1=ler.nextDouble();
+                num2=ler.nextDouble();
+                resp=num1-num2;
+                System.out.println("O resoltado da operação é: "+resp);
+            }
+            if(opcao==4){
+                System.out.println("Digite dois numeros\n");
+                num1=ler.nextDouble();
+                num2=ler.nextDouble();
+                resp=num1/num2;
+                System.out.println("O resoltado da operação é: "+resp);
+            }
+            if(opcao==5){
+                System.out.println("Digite dois numeros\n");
+                num1=ler.nextDouble();
+                num2=ler.nextDouble();
+                resp=num1*num2;
+                System.out.println("O resoltado da operação é: "+resp);
+            }
+        }while(acao);*/
+        
+        //10. Faça um programa que leia um número (n) e imprima os números de 1 a n em ordem crescente (use o comando while).
+        /*System.out.println("Escreva um número ate o qual deve ser contado");
+        Scanner ler=new Scanner(System.in);
+        int num=ler.nextInt();
+        int i=1;
+        while(i<=num){
+            System.out.println(i);
+            i++;
+        }*/
+        
+        //11. Faça um programa para imprimir os números pares de 1 a 100 (use o comando for).
+        /*System.out.println("Os números para de 1 a 100 são:");
+        for(int i=1;i<=100;i++){
+            if(0==i%2){
+                System.out.println(i);
+            }
+        }*/
+        
+        //12. Elabore um programa que leia 10 números fornecidos pelo usuário e imprima todos os números maiores que 20.
+        /*int num[]= new int[10];
+        Scanner ler=new Scanner(System.in);
+        for(int i=0;i<num.length;i++){
+            System.out.println("Escreva um número");
+            num[i]=ler.nextInt();
+        }
+        System.out.println("Os números maiores que 20 são:");
+        for(int i=0;i<num.length;i++){
+            if(num[i]>20){
+                System.out.println(num[i]);
+            }
+        }*/
+        
+        
     }
     
 }

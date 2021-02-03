@@ -5,7 +5,9 @@
 ***
 ## Comandos básicos do Java
 ***
-Nesse diretorio esta o metodo main contendo as respostas  comentadas das questões abaixo.
+No diretorio "Aula 1 - Comandos básicos do Java" contem o metodo main contendo os comentados das questões abaixo.
+
+O caminho até o main é: linguagem_de_programacao1/Aula 1 - Comandos básicos do Java/questao1/src/main/java/newpackage/Main.java.
 
 1. Faça um programa em java que leia o lado de um quadrado e mostre seu perímetro e área. A=L2 P=L*4
 2. Faça um programa em java que leia os dois lados do retangunlo e mostre o perímetro e área. A=B*H P=2*B+2*H

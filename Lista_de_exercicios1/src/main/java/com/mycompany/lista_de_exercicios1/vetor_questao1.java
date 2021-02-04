@@ -52,7 +52,7 @@ public class vetor_questao1 {
         /*3. Criar um programa para ler 10 números inteiros em um vetor A, 
         criar um vetor B que  deverá  receber  os  valores  multiplicados  por  3.  
         Apresentar  os  valores  dos  2 vetores.*/
-        int A[] = new int[10];
+        /*int A[] = new int[10];
         int B[] = new int[10];
         Scanner ler=new Scanner(System.in);
         for(int i=0;i<A.length;i++){
@@ -63,7 +63,7 @@ public class vetor_questao1 {
         System.out.println("Vetor A   Vetor B\n");
         for(int i=0;i<B.length;i++){
            System.out.println("   "+A[i]+"         "+B[i]);
-        }
+        }*/
         
     }
     

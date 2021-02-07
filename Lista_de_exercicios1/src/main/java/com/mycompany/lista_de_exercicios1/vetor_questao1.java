@@ -74,7 +74,7 @@ public class vetor_questao1 {
 	e) Se a string digitada termina com “NAS” (ignorando maiúsculas/minúsculas). 
 	f) O número de dígitos (0 a 9) da string.
 	g) O número de letras da string.*/
-        /*System.out.println("Escreva algo:");
+        System.out.println("Escreva algo:");
         Scanner ler=new Scanner(System.in);
         String frase=ler.nextLine();
         //a) O número de caracteres da string. 
@@ -109,6 +109,8 @@ public class vetor_questao1 {
             System.out.println("A estrigue digitada não termina com NAS");
         }
         //f) O número de dígitos (0 a 9) da string.
+        String digitos=frase.substring(0,9);
+        System.out.println("A string é: "+digitos+"     O número de dígitos (0 a 9) da string é: "+digitos.length());
         //g) O número de letras da string.
         int quant_letras=0;
         for(int i=0; i<frase.length();i++){
@@ -120,7 +122,7 @@ public class vetor_questao1 {
                 }
             }
         }
-        System.out.println("A quantidade de litras é: "+quant_letras);*/
+        System.out.println("A quantidade de litras é: "+quant_letras);
         //2. Nome na vertical. Faça um programa que solicite o nome do usuário e imprima-o na vertical.
         /*System.out.println("Escreva um nome");
         Scanner ler=new Scanner(System.in);
@@ -133,7 +135,7 @@ public class vetor_questao1 {
         (armazenado em uma variável inteira), imprima cada um dos seus dígitos por extenso. 
         Exemplo: Entre o número: 4571 Resultado: quatro, cinco, sete, um */
         //PRIMEIRO METODO DE RESOLUÇÃO
-        System.out.println("Escreva um número");
+        /*System.out.println("Escreva um número");
         Scanner ler=new Scanner(System.in);
         int numero=ler.nextInt();
         String numero1=Integer.toString(numero);
@@ -173,7 +175,7 @@ public class vetor_questao1 {
             default:
               System.out.println("Não é um número");
           }
-        }
+        }*/
         //SEGUNDO METODO DE RESOLUÇÃO
         /*System.out.println("Escreva um número");
         Scanner ler=new Scanner(System.in);

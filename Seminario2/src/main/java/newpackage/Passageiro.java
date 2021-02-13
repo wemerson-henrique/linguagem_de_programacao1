@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//___________________________________CLASS PASSAGEIRO______________________________________________
+//FEITO POR WEMERSON HENRIQUE EM 10/02/2021
+
 package newpackage;
 
 import java.util.Scanner;

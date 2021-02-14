@@ -18,18 +18,26 @@ public class Main {
      */
     public static void main(String[] args) {
         // 1 .Crie uma classe Cliente, considerando que esta deva possuir :
-        /*Scanner ler=new Scanner(System.in);
+        Scanner ler=new Scanner(System.in);
         Cliente cliente1= new Cliente(0);
-        System.out.println("Escreva o nome completo do cliente:");
+        Cliente cliente2= new Cliente(1);
+        System.out.println("Escreva o nome completo do cliente1:");
         cliente1.setNomeCompleto(ler.nextLine());
-        System.out.println("Escreva o CPF do cliente:");
+        System.out.println("Escreva o CPF do cliente1:");
         cliente1.setCPF(ler.nextLine());
+        System.out.println("Escreva o nome completo do cliente2:");
+        cliente2.setNomeCompleto(ler.nextLine());
+        System.out.println("Escreva o CPF do cliente2:");
+        cliente2.setCPF(ler.nextLine());
         System.out.println("\n__________________GET___________________\n");
-        System.out.println("Codigo do cliente: "+cliente1.getCodCliente());
-        System.out.println("Nome completo do cliente: "+cliente1.getNomeCompleto());
-        System.out.println("CPF do cliente: "+cliente1.getCPF());
+        System.out.println("Codigo do cliente1: "+cliente1.getCodCliente());
+        System.out.println("Nome completo do cliente1: "+cliente1.getNomeCompleto());
+        System.out.println("CPF do cliente1: "+cliente1.getCPF());
         System.out.println("\n_____________Informacoes();_____________\n");
-        cliente1.Informacoes();*/
+        System.out.println("Informacoes do cliente1:");
+        cliente1.Informacoes();
+        System.out.println("\nInformacoes do cliente2:");
+        cliente2.Informacoes();
         
         /* 2.Crie um programa que instancie dois objetos Cliente, atribua o valor
         ao atributo Nome do Cliente e CPF. Verificar se CPF é válido.
@@ -97,7 +105,7 @@ public class Main {
         produtos;
         ▫ Fazer a leitura das informações do produto e armazenar
         no vetor.*/
-        Scanner ler=new Scanner(System.in);
+        /*Scanner ler=new Scanner(System.in);
         boolean ligado=true;
         int codigo,opcao,cont=0;
         String nome, marca;
@@ -179,7 +187,7 @@ public class Main {
                 default:
                     System.out.println("Opção invalida");
             }
-        }while(ligado==true);
+        }while(ligado==true);*/
     }
     
 }

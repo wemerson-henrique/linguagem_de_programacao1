@@ -102,7 +102,7 @@ public class Main {
         int codigo,opcao,cont=0;
         String nome, marca;
         double preco;
-        Produto[] produto=new Produto[2];
+        Produto[] produto=new Produto[10];
         do{//criar produto, alterar nome, alterar preço, mostrar informações e sair;
             System.out.println("______________________________________________________________________");
             System.out.println("                                  |                                   ");
@@ -124,36 +124,52 @@ public class Main {
             opcao=ler.nextInt();
             switch(opcao){
                 case 1:
+                    if(cont>=produto.length){System.out.println("Não a espaço para cadastro");break;}
                     ler.nextLine();
-                    System.out.println("Esccreva o nome do produto:");
+                    System.out.println("Escreva o nome do produto:");
                     nome=ler.nextLine();
-                    System.out.println("Esccreva a marca do produto:");
+                    System.out.println("Escreva a marca do produto:");
                     marca=ler.nextLine();
-                    System.out.println("Esccreva o preço do produto:");
+                    System.out.println("Escreva o preço do produto:");
                     preco=ler.nextDouble();
                     produto[cont]= new Produto(cont,nome,marca,preco);
+                    cont++;
                     break;
                 case 2:
                     System.out.println("Escreva o codigo do produto:");
                     codigo=ler.nextInt();
-                    System.out.println("Esccreva o novo nome do produto:");
-                    nome=ler.nextLine();
-                    produto[codigo].setNome(nome);
+                    if(codigo>=cont||codigo<0){
+                        System.out.println("ERRO: codigo não encontrado");
+                    }else{
+                        System.out.println("Escreva o novo nome do produto:");
+                        ler.nextLine();
+                        nome=ler.nextLine();
+                        produto[codigo].setNome(nome);   
+                    }
                     break;
                 case 3:
                     System.out.println("Escreva o codigo do produto:");
                     codigo=ler.nextInt();
-                    System.out.println("Esccreva o novo preço do produto:");
-                    preco=ler.nextDouble();
-                    produto[codigo].setPreco(preco);
+                    if(codigo>=cont||codigo<0){
+                        System.out.println("ERRO: codigo não encontrado");
+                    }else{
+                        System.out.println("Escreva o novo preço do produto:");
+                        preco=ler.nextDouble();
+                        produto[codigo].setPreco(preco);
+                    }
                     break;
                 case 4:
                     System.out.println("Escreva o codigo do produto:");
                     codigo=ler.nextInt();
-                    produto[codigo].Mostrar();
+                    if(codigo>=cont||codigo<0){
+                        System.out.println("ERRO: codigo não encontrado");
+                    }else{
+                        produto[codigo].Mostrar();
+                    }
                     break;
                 case 5:
-                    for(int x=0;x<produto.length;x++){
+                    for(int x=0;x<cont;x++){
+                        System.out.println("______________________________________________________________________");
                         produto[x].Mostrar();
                     }
                     break;
@@ -163,9 +179,7 @@ public class Main {
                 default:
                     System.out.println("Opção invalida");
             }
-            cont++;
         }while(ligado==true);
-        System.out.println("Nome do produto: "+produto[0].getNome());
     }
     
 }

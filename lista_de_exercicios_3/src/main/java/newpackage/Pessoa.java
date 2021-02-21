@@ -58,4 +58,10 @@ public class Pessoa {
         idade++;
     }
     
+    public void Informacoes(){
+        System.out.println("Nome: "+getNome());
+        System.out.println("CPF: "+getCPF());
+        System.out.println("Idade: "+getIdade());
+        System.out.println("Endereco: "+getEndereco());
+    }
 }

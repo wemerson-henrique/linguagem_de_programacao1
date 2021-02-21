@@ -10,21 +10,57 @@ package newpackage;
  * @author kiran
  */
 public class Professor extends Pessoa {
+    private Pessoa pessoa;
     private String turno;
+    private String materia;
     private double salario;
-    
-    
-    public Professor(String nome, String CPF, int idade, String endereco, String turno, double salario) {
-        super(nome, CPF, idade, endereco);
-        this.salario=salario;
-        this.turno=turno;
+
+    public Professor(Pessoa pessoa, String turno, String materia, double salario) {
+        super(pessoa.getNome(), pessoa.getCPF(), pessoa.getIdade(), pessoa.getEndereco());
+        this.pessoa = pessoa;
+        this.turno = turno;
+        this.materia = materia;
+        this.salario = salario;
     }
+
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    public String getTurno() {
+        return turno;
+    }
+
+    public void setTurno(String turno) {
+        this.turno = turno;
+    }
+
+    public String getMateria() {
+        return materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    
+    
+    
     public void Informacoes(){
-        System.out.println("Nome de Professor: "+getNome());
-        System.out.println("CPF: "+getCPF());
-        System.out.println("Idade: "+getIdade());
-        System.out.println("Endereco: "+getEndereco());
+        super.Informacoes();
         System.out.println("Turno: "+turno);
+        System.out.println("Materia: "+materia);
         System.out.println("Salario: "+salario);
     }
     public void Almento(double reajuste){
